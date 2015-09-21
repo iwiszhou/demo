@@ -13,6 +13,10 @@
   padding-right: 45px;
 }
 
+.top-section .sort-by select{
+  color:black;
+}
+
 .top-section .page-index{
   line-height: 39px;
 }
@@ -69,6 +73,7 @@
   transition: all 1s ease-in-out;
 }
 .image-list .item:hover {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 .image-list .item .side {
@@ -77,6 +82,7 @@
 }
 .image-list .item .back {
   background: white;
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   position: absolute;
   top: 0;
