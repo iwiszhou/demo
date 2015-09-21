@@ -22,7 +22,7 @@ angular.module('shomiApp')
 		}
 	})
 	.directive('divPagination', function () {
-		var linkFn, controllerFn;
+		var linkFn;
 		
 		linkFn = function (scope, element, attrs) {
 			scope.list = scope.list || [];
@@ -35,7 +35,6 @@ angular.module('shomiApp')
 			scope : {
 				list : "=",
 				perPage : "=",
-				totalPage : "=",
 				sortingList : "="
 			},
 			templateUrl: 'share/divPagination/divPagination.html',
