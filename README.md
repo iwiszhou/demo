@@ -1,7 +1,13 @@
 # shomi
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.12.1.
+## Configuration
+
+Clone the code and install the dependencies.
+
+cd your_folder
+npm install -g grunt-cli
+nmp install
+bower install
 
 ## Build & development
 
