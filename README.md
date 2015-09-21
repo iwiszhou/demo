@@ -4,10 +4,13 @@
 
 Clone the code and install the dependencies.
 
-cd your_folder
-npm install -g grunt-cli
-nmp install
-bower install
+`cd your_folder`
+### install grunt cli
+`npm install -g grunt-cli`
+### install dependencies
+`nmp install`
+### install bower dependencies
+`bower install`
 
 ## Build & development
 
