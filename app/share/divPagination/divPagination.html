@@ -1,0 +1,47 @@
+
+<div class="row top-section">
+	<div class="col-xs-3 col-xs-offset-1 page-index">Page : {{currentPage}}</div>
+
+	<div class="col-xs-4 pagination-wrap" ng-if="totalPage > 0">
+		<nav>
+			<ul class="pagination">
+				<li>
+					<a href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+				<li ng-repeat="p in getNumber(totalPage) track by $index"><a ng-click="paginationClick($index)">{{$index + 1}}</a></li>
+				<li>	
+					<a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="col-xs-3 sort-by">
+		Sort by : <select ng-model="sortByModel" ng-options="option.name for option in sortingList" ng-change="updateSort()"></select>
+	</div>
+</div>
+
+
+<div class="row image-list" >
+	<div class="col-xs-2 item-container" 
+		ng-repeat="item in partialList" 
+		ng-class="{'col-xs-offset-1' : $index % 5 === 0 }">
+		
+		<div class="item">
+			<div class="side">
+				<div class="image-wrap"><img ng-src="{{item.imageUrl}}"></div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="side back details">
+				<div>{{item.title}}</div>
+				<div>{{item.duration | secToHourMin | date:'HH:mm:ss'}}</div>
+				<div>{{item.releaseYear}}</div>
+			</div>
+		</div>
+
+	</div>
+</div>

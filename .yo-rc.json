@@ -1,0 +1,28 @@
+{
+  "generator-ng-component": {
+    "routeDirectory": "app/components/",
+    "directiveDirectory": "app/components/",
+    "filterDirectory": "app/components/",
+    "serviceDirectory": "app/components/",
+    "basePath": "app",
+    "moduleName": "",
+    "filters": [
+      "uirouter",
+      "jasmine"
+    ],
+    "extensions": [
+      "js",
+      "html",
+      "scss"
+    ],
+    "directiveSimpleTemplates": "",
+    "directiveComplexTemplates": "",
+    "filterTemplates": "",
+    "serviceTemplates": "",
+    "factoryTemplates": "",
+    "controllerTemplates": "",
+    "decoratorTemplates": "",
+    "providerTemplates": "",
+    "routeTemplates": ""
+  }
+}

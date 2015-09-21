@@ -1,0 +1,86 @@
+/******************************
+******* Top section **********
+*******************************/
+.top-section{
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.top-section .sort-by{
+  line-height: 39px;
+  text-align: right;
+  padding-right: 45px;
+}
+
+.top-section .page-index{
+  line-height: 39px;
+}
+
+/**************************************
+******* Pagination buttions **********
+**************************************/
+.top-section .pagination-wrap{
+	text-align: center;
+}
+
+.top-section .pagination-wrap li{
+	cursor: pointer;
+}
+
+.top-section .pagination{
+  margin:0;
+}
+
+/************************
+******* List Item *******
+************************/
+.image-list .image-wrap{
+	transition: all .5s ease;
+}
+
+.image-list .image-wrap img{
+	width: 131.875px;
+	height: 198px;
+}
+.image-list .item{
+	max-width: 131.875px;
+	width: 131.875px;
+}
+.image-list .item .back.details{
+	padding: 10px;
+}
+
+/************************
+******* Flip Item *******
+************************/
+.image-list .item-container {
+  -webkit-perspective: 600;
+  perspective: 600;
+  position: relative;
+  margin-bottom: 10px;
+}
+.image-list .item {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.image-list .item:hover {
+  transform: rotateY(180deg);
+}
+.image-list .item .side {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.image-list .item .back {
+  background: white;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

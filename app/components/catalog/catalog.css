@@ -1,0 +1,14 @@
+body{
+	background: #2a0251;
+}
+
+.catalog.container{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.catalog.container .loading-spinner{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}

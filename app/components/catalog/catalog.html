@@ -1,0 +1,17 @@
+<div class="catalog container">
+	<div ng-if="errorMsg">{{errorMsg}}</div>
+
+	<div ng-if="!errorMsg">
+		<div class="loading-spinner text-center" ng-if="!catalogData">
+			<img src="images/spinnerLarge.gif">
+		</div>
+
+		<div-pagination 
+			list="catalogData" 
+			per-page="20"
+			sorting-list="sortingList"
+			ng-if="catalogData">
+		</div-pagination>
+	</div>
+</div>
+
