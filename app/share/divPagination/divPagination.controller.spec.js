@@ -59,12 +59,12 @@ describe('Controller: DivPaginationCtrl', function () {
       releaseYear : "1990"
     },
     {
-      title: "k",
+      title: "l",
       duration : "02:50:30",
       releaseYear : "1990"
     },
     {
-      title: "l",
+      title: "k",
       duration : "02:50:30",
       releaseYear : "1990"
     }
@@ -113,7 +113,9 @@ describe('Controller: DivPaginationCtrl', function () {
   });
 
   it('should return new order of list', function () {
-    scope.sortByModel.value = "title";
+    scope.sortByModel = {
+      value : "title"
+    }
     
     scope.updateSort();
 
